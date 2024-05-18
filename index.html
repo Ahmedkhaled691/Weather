@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    
+    <title>Weather</title>
+  </head>
+  <body class="">
+    <nav
+      class="navbar navbar-expand-lg navbar-light rounded-pill w-75 m-auto mt-5"
+    >
+      <div class="container-fluid rounded-pill">
+        <a class="navbar-brand ps-5" href="#">Weather</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto pe-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light fw-bold mx-2 rounded-pill"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="search w-50 mt-5 m-auto">
+      <input
+        type="text"
+        id="search-bar"
+        class="w-100 mb-5 py-2 feald ps-3"
+        placeholder=" Search City..."
+        style="font-family: Arial, FontAwesome"
+      />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div
+            class="day-and-date rounded d-flex justify-content-between px-3 pt-2"
+          >
+            <p id="today">Monday</p>
+            <p id="today-date">3 May</p>
+          </div>
+          <div class="temp-datails rounded pb-3 mt-2 mx-auto  pt-4">
+            <p class="location" id="location"></p>
+            <div class="d-flex justify-content-between my-4 mx-3">
+              <div class="pt-3">
+                <h2 id="today-degree" class="d-inline-block"></h2>
+                <h2 class="d-inline-block"><sup>o</sup>C</h2>
+              </div>
+              <img id="today-icon" width="90" />
+            </div>
+            <p id="today-description" class="fw-bold ms-3"></p>
+            <div class="details">
+              <i class="fas fa-umbrella pr-1"></i>
+              <span id="humidty"></span> <span>%</span>
+
+              <i class="fas fa-wind pl-3 pr-1"></i>
+              <span id="wind"></span> <span>km/h</span>
+
+              <i class="far fa-compass pl-3 pr-1"></i>
+              <span id="compass"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="day-and-date rounded d-flex justify-content-center px-3 pt-2 mb-2"
+          >
+            <p class="nextDay">Tuesday</p>
+          </div>
+
+          <div class="temp-datails text-center rounded">
+            <div>
+              <img class="nextDay-icon" width="90" />
+            </div>
+            <h2 class="max-degree d-inline-block"></h2>
+            <h2 class="d-inline-block"><sup>o</sup>C</h2>
+            <br />
+            <p class="min-degree d-inline-block"></p>
+            <p class="d-inline-block"><sup>o</sup>C</p>
+            <p class="nextDay-description"></p>
+          </div>
+          <p id="today-description"></p>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="day-and-date rounded d-flex justify-content-center px-3 pt-2 mb-2"
+          >
+            <p class="nextDay">Wednsday</p>
+          </div>
+
+          <div class="temp-datails text-center rounded">
+            <div>
+              <img class="nextDay-icon" width="90" />
+            </div>
+            <h2 class="max-degree d-inline-block"></h2>
+            <h2 class="d-inline-block"><sup>o</sup>C</h2>
+            <br />
+            <p class="min-degree d-inline-block"></p>
+            <p class="d-inline-block"><sup>o</sup>C</p>
+            <p class="nextDay-description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+  </body>
+</html>
