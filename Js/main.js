@@ -47,7 +47,7 @@ let nextDay = document.getElementsByClassName("nextDay"),
 
 
 async function getWeatherData() {
-  apiResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=9a7f27afc5ea4fbf811175831241605&q=${currentCity}&days=3`);
+  apiResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=9a7f27afc5ea4fbf811175831241605&q=${currentCity}&days=3`);
   responseData = await apiResponse.json();
    console.log(responseData);
   displayTodayWeather();
